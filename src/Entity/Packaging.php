@@ -9,7 +9,6 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Packaging
 {
-
     /**
      * @ORM\Id
      * @ORM\Column(type="integer")
@@ -44,5 +43,4 @@ class Packaging
         $this->length = $length;
         $this->maxWeight = $maxWeight;
     }
-
 }

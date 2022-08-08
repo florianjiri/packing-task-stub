@@ -5,8 +5,8 @@ services:
         image: mariadb:10.7
         ports:
             -
-                target: 3306
-                published: 3306
+                target: 3307
+                published: 3307
         environment:
             MYSQL_ROOT_PASSWORD: secret
             MYSQL_DATABASE: packing
