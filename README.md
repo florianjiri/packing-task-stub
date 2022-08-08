@@ -1,5 +1,5 @@
 ### init
-- `printf "UID=$(id -u)\nGID=$(id -g)" > .env`
+- `printf "UID=$(id -u)\nGID=$(id -g)\nDOCKER_BUILDKIT=0" > .env`
 - `docker-compose up -d`
 - `docker-compose run shipmonk-packing-app bash`
 - `composer install && vendor/bin/doctrine orm:schema-tool:create && vendor/bin/doctrine dbal:run-sql "$(cat data/packaging-data.sql)"`
